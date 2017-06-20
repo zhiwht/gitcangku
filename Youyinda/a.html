@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="Font-Awesome-3.2.1/css/font-awesome.css" />
+		<link rel="stylesheet" href="css/a.css" />
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+			<div>
+				在线询问
+			</div>
+			<span class="glyphicon glyphicon-qrcode a"></span>
+		</header>
+		<form action="" method="post">
+			<div>
+				<lable>标题</lable>
+				<input type="text" name="" id="bt" value="" />
+			</div>
+			<div>
+				<lable>内容</lable>
+				<input type="text" name="" id="nr" value="" />
+			</div>
+			<div>
+				<lable>联系人</lable>
+				<input type="text" name="" id="lxr" value="" />
+			</div>
+			<div>
+				<lable>电话</lable>
+				<input type="text" name="" id="dh" value="" />
+			</div>
+			<div class="a" >
+				<lable >电话</lable>
+			<input type="submit" value="发送"/>
+				
+			</div>
+			<div id="show"></div>
+		</form>
+		
+	</body>
+</html>
+<script>
+		var bt=document.getElementById("bt");
+		var nr=document.getElementById("nr");
+		var lir=document.getElementById("lir");
+		var dh=document.getElementById("dh");
+		var show=document.getElementById("show")
+		var reg=/^[a-zA-Z]\w{5,17}$/;
+		var l=/^[a-zA-Z]\w{1,4}$/;
+		var sj=/^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\\d{8}$/; 
+		if(!reg.test(bt.value)){
+			show.innerHTML="标题输入错误";
+		}
+</script>

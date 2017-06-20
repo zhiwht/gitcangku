@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+header{
+     padding: 16px 15px;
+        position: relative;
+        background: gainsboro;
+        a{
+            float: left;
+            left: 0;
+            font-size: 16px;
+        }
+        div{
+            width: 100%;
+            text-align: center;
+        }
+        .a{
+           position: absolute;
+             font-size: 16px;
+            top: 16px;
+            right: 15px;
+             color: black;
+        }
+    }
+form{
+    div{
+        width: 100%;
+            clear: both;
+        lable{
+            width: 15%;
+            text-align: right;
+            float: left;
+            margin-right: 10px;
+        }
+        input{
+            float: left;
+            width: 80%;
+            height: 32px;
+            margin-bottom: 5px;
+        }
+        &:nth-child(2){
+            input{
+                height: 100px;
+            }
+        }
+    }
+    .a{
+        lable{
+            float: left;
+        }
+        input{
+            float: left;
+            width: 64px;
+            background: black;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+}

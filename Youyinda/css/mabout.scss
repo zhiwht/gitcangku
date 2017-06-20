@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    padding: 16px 15px;
+        position: relative;
+        background: gainsboro;
+        a{
+            float: left;
+            left: 0;
+            font-size: 16px;
+        }
+        div{
+            width: 100%;
+            text-align: center;
+        }
+        .a{
+           position: absolute;
+             font-size: 16px;
+            top: 16px;
+            right: 15px;
+             color: black;
+        }
+}
+section{
+    padding: 0 10px;
+    font-size: 12px;
+    p{
+        text-indent: 2em;
+    }
+}
+footer{
+    text-align: center;
+    padding: 150px 0;
+}

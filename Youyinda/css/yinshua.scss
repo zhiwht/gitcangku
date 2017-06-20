@@ -1,0 +1,184 @@
+*,h2{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.box{
+    width: 200%;
+    height: 100%;
+    display: flex;
+    transition: all 0.5s;
+    .one{
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    header{
+        padding: 16px 15px;
+        position: relative;
+        span:first-child{
+            float: left;
+            left: 0;
+            font-size: 16px;
+        }
+        div{
+            width: 100%;
+            text-align: center;
+        }
+        a{
+           position: absolute;
+             font-size: 16px;
+            top: 16px;
+            right: 15px;
+             color: black;
+        }
+    }
+    .poster{
+        overflow: hidden;
+        position: relative;
+        li{
+            -webkit-flex-shrink: 0;
+            img{
+            width: 100%;
+            max-width: 100%;
+            height:130px;
+        }
+        }
+        
+        .y{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    section{
+        padding: 0  10px;
+        h2{
+            font-size: 16px;
+            margin: 0 5px;
+            line-height: 35px;
+            i{
+                display: inline-block;
+                text-align: center;
+                background:#00bc8e;
+                width: 35px;
+                height: 35px;
+                float: right;
+                margin-top: -3px;
+                margin-right: 5px;
+                border-radius: 50%;
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin-bottom: 2px;
+                }
+            }
+        }
+        .content{
+            padding: 0 10px;
+            line-height: 25px;
+            font-size: 12px;
+        }
+        .blank{
+            width: 100%;
+            height: 10px;
+            margin-bottom: 7px;
+            border-bottom: 1px solid gainsboro;
+        }
+        .xin{
+            margin-bottom: 0px;
+            li{
+                list-style-type: square;
+                font-size: 12px;
+                line-height: 40px;
+                position: relative;
+                padding:  0 0 0 12px;
+                i{
+                    width: 4px;
+                    height: 4px;
+                    position: absolute;
+                    left: 0;
+                    top: 18px;
+                    background: black;
+                    border-radius: 50%;
+                }
+                a{
+                    color: black;
+                }
+                span{
+                    float: right;
+                }
+            }
+        }
+        dl{
+            display: flex;
+            dt{
+                width: 90px;
+                height: 90px;
+                display: flex;
+//              border: 1px solid gray;
+                align-items: center;
+                margin-right: 10px;
+                img{
+                    width: 90px;
+                    height: 90px;
+                    
+                }
+            }
+            dd{
+                .text{
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+            }
+        }
+        
+    }
+    footer{
+        div{
+           text-align: center;
+           padding: 15px 0; 
+        }
+    }
+    }
+    .two{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        header{
+            text-align: center;
+            padding: 16px 0;
+            background: #00bc8e;
+            color: white;
+            i{
+                float: right;
+                font-size: 20px;
+                margin-right: 15px;
+                font-weight: 400;
+            }
+        }
+        section{
+            flex: 1;
+//          background: gainsboro;
+            padding: 0 5px;
+            div{
+                text-align: center;
+                border-bottom: 1px solid gray;
+                padding: 20px 0;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
