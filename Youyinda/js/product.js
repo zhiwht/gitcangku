@@ -19,7 +19,7 @@ $(function(){
 		success:function(data){
 			var arr = data.list;
 			for(var i=0;i<data.list.length;i++){
-				str+="<li><img src='"+data.list[i].imgurl+"'/><h6>"+data.list[i].title+"</h6><a href='productinfo.html?id="+data.list[i].id+"'></a></li>"
+				str+="<li><img src='"+data.list[i].imgurl+"'/><h6>"+data.list[i].title+"</h6><a href='productInfo.html?id="+data.list[i].id+"'></a></li>"
 			}
 			$(".main-body").css("height","1300px")
 			$(".product-content").html("<ul>"+str+"</ul>")
