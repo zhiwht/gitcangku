@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="Font-Awesome-3.2.1/css/font-awesome.css" />
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" href="css/b.css" />
+		<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html"><span class=" icon-arrow-left"></span></a>
+			登录携程账号
+		</header>
+		<div>
+			没有携程账号？<span class="aa">在此注册</span><span>忘记密码？</span>
+		</div>
+		<form class="b">
+			<input type="text" id="input1" value="" placeholder="携程注册邮箱或手机号" /><br />
+			<input type="text" id="pass1" value="" placeholder="密码" /><br />
+			<input type="submit" value="登录" id="sm1" />
+		</form>
+		
+		<form class="a">
+			<input type="text" id="input" value="" placeholder="注册账号" /><br />
+			<input type="text" id="pass" value="" placeholder="注册密码" /><br />
+			<input type="submit" value="注册" id="sm" />
+		</form>
+	</body>
+	<script type="text/javascript">
+	$(function(){
+		
+	
+		document.getElementById("input").focus;
+		var arr2;
+		$("#sm").click(function(){
+			var put = $("#input").val();
+			var pass = $("#pass").val();
+			var arr ={
+				name: put,
+				pass: pass
+			};
+			var re = /^[a-zA-z]\w{3,15}$/;
+			if(re.test(put)){	
+
+			localStorage.setItem("user", JSON.stringify(arr)); //把变量存进本地
+				alert("注册成功")
+				}
+			else{
+				alert("注册失败")
+				
+				$("#input").val("");
+				$("#pass").val("");
+				return false;
+			}
+		})
+
+		
+		
+		
+		$("#sm1").click(function(){
+			arr2 = JSON.parse(localStorage.getItem("user"));
+			var put1 = $("#input1").val();
+			var pass1 = $("#pass1").val();
+			var str=[];
+			str.push(arr2);
+			console.log(str)
+				if(put1==arr2.name&&pass1==arr2.pass){
+				alert("登录成功")
+				window.open('index.html');
+			}
+				else{
+					alert("账号或密码错误")
+				}
+			
+		})
+		$(".aa").click(function(){
+			$(".a").show();
+			$(".b").hide();
+		})
+		})
+	</script>
+
+</html>
