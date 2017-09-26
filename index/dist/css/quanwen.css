@@ -1,0 +1,102 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 榛戜綋, Arial;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: black; }
+
+li {
+  list-style: none; }
+
+header {
+  border-bottom: 1px solid gray; }
+  header div {
+    width: 1024px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    header div img {
+      float: left; }
+    header div ul {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      padding-top: 32px; }
+      header div ul li {
+        float: right;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 20px; }
+        header div ul li:hover a {
+          color: #3366ff; }
+
+section {
+  width: 100%; }
+  section .content {
+    margin: 0 auto;
+    width: 1024px;
+    margin-top: 60px;
+    position: relative; }
+    section .content div:first-child {
+      position: absolute;
+      left: 0;
+      color: #0066cc;
+      text-align: center;
+      top: 0; }
+      section .content div:first-child p:first-child {
+        font-size: 38px;
+        font-weight: bold; }
+      section .content div:first-child p:nth-child(2) {
+        font-size: 14px;
+        font-weight: bold; }
+      section .content div:first-child span {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        border: 6px solid #0066cc;
+        border-top: none;
+        border-left: none;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        position: absolute;
+        right: -40px;
+        top: 30px; }
+    section .content div:last-child {
+      width: 850px;
+      border-bottom: 1px dashed gainsboro;
+      float: right; }
+      section .content div:last-child h3 {
+        font-size: 25px; }
+      section .content div:last-child time {
+        font-size: 12px;
+        color: gray; }
+      section .content div:last-child p {
+        font-size: 12px;
+        color: gray;
+        margin-top: 20px; }
+      section .content div:last-child img {
+        margin-top: 75px;
+        margin-bottom: 20px; }
+
+footer {
+  width: 100%;
+  background: #999999;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center; }

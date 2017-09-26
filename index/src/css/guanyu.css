@@ -1,0 +1,90 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 榛戜綋, Arial;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black; }
+
+li {
+  list-style: none; }
+
+header {
+  border-bottom: 1px solid gray; }
+  header div {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex; }
+    header div img {
+      float: left; }
+    header div ul {
+      flex: 1;
+      padding-top: 32px; }
+      header div ul li {
+        float: right;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 20px; }
+        header div ul li:hover a {
+          color: #3366ff; }
+
+section {
+  width: 900px;
+  margin: 0 auto; }
+  section ul {
+    margin-top: 52px; }
+    section ul li {
+      float: left;
+      margin-right: 30px; }
+      section ul li:hover a {
+        border-bottom: 2px solid skyblue;
+        padding-bottom: 2px; }
+  section h1 {
+    text-align: center;
+    padding: 50px 0; }
+  section p {
+    font-size: 14px; }
+  section .data {
+    width: 800px;
+    margin: 0 auto; }
+    section .data h2 {
+      width: 400px;
+      font-size: 35px;
+      font-weight: 400;
+      border-bottom: 1px dashed   gray;
+      padding-top: 155px; }
+      section .data h2 span {
+        float: right;
+        color: #3366ff; }
+    section .data div {
+      padding: 5px 0;
+      font-size: 14px; }
+  section .data1 {
+    width: 800px;
+    margin: 0 auto;
+    padding-left: 400px; }
+    section .data1 h2 {
+      width: 400px;
+      font-size: 35px;
+      font-weight: 400;
+      border-bottom: 1px dashed   gray;
+      padding-top: 155px; }
+      section .data1 h2 span {
+        float: right;
+        color: #3366ff; }
+    section .data1 div {
+      padding: 5px 0;
+      font-size: 14px; }
+
+footer {
+  width: 100%;
+  background: #999999;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+
+/*# sourceMappingURL=guanyu.css.map */

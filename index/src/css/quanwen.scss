@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 黑体, Arial;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+header{
+    border-bottom: 1px solid gray;
+    div{
+        width: 1024px;
+    margin: 0 auto;
+    display: flex;
+        img{
+            float: left;
+        }
+        ul{
+            flex: 1;
+            padding-top: 32px;
+            li{
+                float: right;
+                cursor: pointer;
+                font-size: 16px;
+                padding: 20px;
+                &:hover a{
+                    color: #3366ff;
+                }
+            }
+        }
+    }
+}
+section{
+    width: 100%;
+    .content{
+        margin: 0 auto;
+        width: 1024px;
+        margin-top: 60px;
+        position: relative;
+        div:first-child{
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+            text-align: center;
+            top: 0;
+            p:first-child{
+                font-size: 38px;
+                font-weight: bold;
+            }
+            p:nth-child(2){
+                font-size: 14px;
+                font-weight: bold;
+            }
+            span{
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                border: 6px solid #0066cc;
+                border-top: none;
+                border-left:none;
+                transform: rotate(-45deg);
+                position: absolute;
+                right: -40px;
+                top: 30px;
+            }
+        }
+        div:last-child{
+            width: 850px;
+            border-bottom:1px dashed gainsboro ;
+            float: right;
+            h3{
+                font-size: 25px;
+            }
+            time{
+                font-size: 12px;
+                color: gray;
+            }
+            p{
+                font-size: 12px;
+                color: gray;
+                margin-top: 20px;
+            }
+            img{
+                margin-top: 75px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+footer{
+    width: 100%;
+    background: #999999;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}

@@ -1,0 +1,110 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 榛戜綋, Arial;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black; }
+
+li {
+  list-style: none; }
+
+header {
+  border-bottom: 1px solid gray; }
+  header div {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex; }
+    header div img {
+      float: left; }
+    header div ul {
+      flex: 1;
+      padding-top: 32px; }
+      header div ul li {
+        float: right;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 20px; }
+        header div ul li:hover a {
+          color: #3366ff; }
+
+section {
+  width: 1024px;
+  height: auto;
+  margin: 0 auto; }
+  section h3 {
+    font-weight: 500;
+    padding: 10px;
+    font-size: 26px; }
+  section .div {
+    padding: 10px 70px;
+    background: gainsboro;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 18px; }
+    section .div span {
+      margin-right: 35px; }
+    section .div input {
+      margin-left: 5px;
+      height: 35px;
+      width: 260px;
+      border-radius: 3px;
+      border: none;
+      border: 1px solid gray; }
+    section .div button {
+      width: 150px;
+      height: 40px;
+      text-align: center;
+      background: #3366ff;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-left: 78px; }
+    section .div .box {
+      position: absolute;
+      right: 60px;
+      top: 10px; }
+      section .div .box small {
+        font-size: 14px; }
+  section .content {
+    box-sizing: border-box;
+    background: gainsboro;
+    height: auto; }
+    section .content .on {
+      display: block;
+      height: auto; }
+    section .content li {
+      display: none; }
+      section .content li .box1 ul {
+        margin-top: 10px;
+        height: auto;
+        display: flex; }
+        section .content li .box1 ul li {
+          display: block;
+          padding-left: 20px;
+          font-size: 14px;
+          line-height: 30px;
+          flex: 1; }
+          section .content li .box1 ul li:not(:last-child) {
+            border-right: 1px dashed gray; }
+      section .content li .box1 h4 {
+        text-align: center;
+        padding: 15px 0;
+        border-top: 1px dashed gray;
+        margin-top: 20px; }
+
+footer {
+  margin-top: 400px;
+  width: 100%;
+  background: #999999;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+
+/*# sourceMappingURL=lizhi.css.map */

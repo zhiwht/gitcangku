@@ -1,0 +1,91 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 榛戜綋, Arial;
+  box-sizing: border-box; }
+
+li {
+  list-style: none; }
+
+header {
+  border-bottom: 1px solid gray; }
+  header div {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex; }
+    header div img {
+      float: left; }
+    header div ul {
+      flex: 1;
+      padding-top: 32px; }
+      header div ul li {
+        float: right;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 20px; }
+        header div ul li:hover {
+          color: #3366ff; }
+
+section .content {
+  margin: 0 auto;
+  width: 1024px;
+  height: 615px;
+  margin-top: 60px;
+  position: relative; }
+  section .content div:first-child {
+    position: absolute;
+    left: 0;
+    color: #0066cc;
+    text-align: center;
+    top: 0; }
+    section .content div:first-child p:first-child {
+      font-size: 38px;
+      font-weight: bold; }
+    section .content div:first-child p:nth-child(2) {
+      font-size: 14px;
+      font-weight: bold; }
+    section .content div:first-child span {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border: 6px solid #0066cc;
+      border-top: none;
+      border-left: none;
+      transform: rotate(-45deg);
+      position: absolute;
+      right: -40px;
+      top: 30px; }
+  section .content div:last-child {
+    width: 850px;
+    height: 615px;
+    border-bottom: 1px dashed gainsboro;
+    float: right; }
+    section .content div:last-child h3 {
+      font-size: 25px; }
+    section .content div:last-child time {
+      font-size: 12px;
+      color: gray; }
+    section .content div:last-child p {
+      font-size: 12px;
+      color: gray;
+      margin-top: 10px; }
+    section .content div:last-child h5 {
+      font-size: 20px;
+      padding-top: 19px;
+      padding-bottom: 30px;
+      font-weight: 500;
+      cursor: pointer;
+      color: gray; }
+
+footer {
+  width: 100%;
+  background: #999999;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+
+/*# sourceMappingURL=dongtai.css.map */

@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 黑体, Arial;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+header{
+    border-bottom: 1px solid gray;
+    div{
+        width: 1024px;
+    margin: 0 auto;
+    display: flex;
+        img{
+            float: left;
+        }
+        ul{
+            flex: 1;
+            padding-top: 32px;
+            li{
+                float: right;
+                cursor: pointer;
+                font-size: 16px;
+                padding: 20px;
+                &:hover a{
+                    color: #3366ff;
+                }
+            }
+        }
+    }
+}
+section{
+    width: 900px;
+    margin: 0 auto;
+    ul{
+        margin-top: 52px;
+        li{
+            float: left;
+            margin-right: 30px;
+            &:hover a{
+                border-bottom: 2px solid skyblue;
+                padding-bottom: 2px;
+            }
+        }
+    }
+    h1{
+        text-align: center;
+        padding: 50px 0;
+    }
+    p{
+        font-size: 14px;
+    }
+    .data{
+        width: 800px;
+        margin:  0 auto;
+        h2{
+            width: 400px;
+            font-size: 35px;
+            font-weight: 400;
+            border-bottom: 1px dashed   gray;
+            padding-top: 155px;
+            span{
+                float: right;
+                color: #3366ff;
+            }
+        }
+        div{
+            padding: 5px 0;
+            font-size:14px ;
+        }
+    }
+    .data1{
+        width: 800px;
+        margin:  0 auto;
+        padding-left: 400px;
+        h2{
+            width: 400px;
+            font-size: 35px;
+            font-weight: 400;
+            border-bottom: 1px dashed   gray;
+            padding-top: 155px;
+            span{
+                float: right;
+                color: #3366ff;
+            }
+        }
+        div{
+            padding: 5px 0;
+            font-size:14px ;
+        }
+    }
+}
+footer{
+    width: 100%;
+    background: #999999;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;}

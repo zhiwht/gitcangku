@@ -1,0 +1,53 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 榛戜綋, Arial;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black; }
+
+li {
+  list-style: none; }
+
+header {
+  border-bottom: 1px solid gray; }
+  header div {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex; }
+    header div img {
+      float: left; }
+    header div ul {
+      flex: 1;
+      padding-top: 32px; }
+      header div ul li {
+        float: right;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 20px; }
+        header div ul li:hover a {
+          color: #3366ff; }
+
+section {
+  width: 1000px;
+  margin: 0 auto; }
+  section h1 {
+    text-align: center;
+    padding: 30px 0; }
+  section p {
+    color: gray;
+    font-size: 12px;
+    padding: 10px 0; }
+
+footer {
+  width: 100%;
+  background: #999999;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
+
+/*# sourceMappingURL=xieyi.css.map */

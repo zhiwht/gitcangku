@@ -1,0 +1,196 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family:  Arial;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: black; }
+
+li {
+  list-style: none; }
+
+header {
+  border-bottom: 1px solid gray; }
+  header div {
+    width: 1024px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    height: 123px;
+    display: flex; }
+    header div img {
+      float: left; }
+    header div ul {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      padding-top: 32px; }
+      header div ul li {
+        float: right;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 20px; }
+        header div ul li:hover a {
+          color: #3366ff; }
+
+section {
+  width: 1000px;
+  margin: 0 auto; }
+  section ul {
+    width: 660px;
+    height: 50px;
+    margin: 0 auto; 
+    margin-top: 50px; }
+    section ul li {
+      float: left;
+      position: relative;
+      margin-left: 10px;
+      text-align: center;
+      line-height: 50px;
+      width: 206px;
+      height: 50px;
+       cursor: pointer;
+      font-size: 18px;
+      background: #cccccc;}
+      section ul li:hover {
+        background: #3366ff; }
+        section ul li:hover a {
+        color: white; }
+        section ul li span{
+        	display: inline-block;
+        	width: 0;
+        	height: 0;
+        	border: 10px solid #3366ff;
+        	border-color:  #3366ff transparent transparent  transparent;
+        	position: absolute;
+        	bottom: -20px;
+        	display: none;
+        	left: 98px;
+        }
+         section ul li:hover span{
+         	display: block;
+         }
+  section h1 {
+    text-align: center;
+    padding: 30px 0; }
+  section p {
+    font-size: 14px; }
+  section .data {
+    width: 800px;
+    margin: 0 auto; }
+    section .data h2 {
+      width: 400px;
+      font-size: 35px;
+      font-weight: 400;
+      border-bottom: 1px dashed   gray;
+      padding-top: 155px; }
+      section .data h2 span {
+        float: right;
+        color: #3366ff; }
+    section .data div {
+      padding: 5px 0;
+      font-size: 14px; }
+  section .data1 {
+    width: 800px;
+    margin: 0 auto;
+    padding-left: 400px; }
+    small{
+    	font-size: 14px;
+    }
+    section .data1 h2 {
+      width: 400px;
+      font-size: 35px;
+      font-weight: 400;
+      border-bottom: 1px dashed   gray;
+      padding-top: 155px; }
+      section .data1 h2 span {
+        float: right;
+        color: #3366ff; }
+    section .data1 div {
+      padding: 5px 0;
+      font-size: 14px; }
+h3{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+footer {
+  height: 220px;
+  width: 100%;
+  background: #3366ff;
+  margin-top: 47px;
+  padding-top: 56px; }
+  footer ul {
+    width: 1024px;
+    height: 150px;
+    margin: 0 auto;
+    padding-left: 50px; }
+    footer ul li {
+      width: 190px;
+      height: 150px;
+      position: relative;
+      float: left;
+      color: white;
+      margin-left: 10px; }
+      footer ul li img {
+        float: left;
+        margin-right: 10px; }
+      footer ul li h2 {
+        font-size: 22px;
+        color: white;
+        font-weight: 400;
+        margin-bottom: 10px; }
+      footer ul li p {
+        font-size: 16px;
+        color: white;
+        line-height: 22px; }
+      footer ul li .g {
+        margin-left: 62px; }
+      footer ul li .jian {
+        position: absolute;
+        right: -280px;
+        top: -40px; }
+        footer ul li .jian p:first-child {
+          font-size: 16px;
+          color: white; }
+        footer ul li .jian p {
+          font-size: 20px;
+          color: white;
+          line-height: 25px; }
+      footer ul li .x {
+        width: 1px;
+        height: 125px;
+        background: white;
+        position: absolute;
+        right: -100px;
+        top: 0; }
+
+.foot {
+  width: 100%;
+  height: 45px;
+  background: #006699; }
+  .foot p {
+    width: 700px;
+    margin: 0 auto;
+    color: white;
+    font-size: 12px;
+    line-height: 45px; }
+    .foot p img {
+      margin-left: 30px;
+      margin-right: 5px;
+      margin-bottom: -5px; }
+
+#top{
+	position: fixed;
+	bottom: 350px;
+	right: 20px;
+	display: none;
+}
+	#top a	img{
+		width: 50px;
+		height: 50px;
+	}

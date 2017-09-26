@@ -1,0 +1,37 @@
+/**{margin:0; padding:0; list-style:none; }
+		body{ background:#fff; font:normal 12px/22px 宋体;  }
+		img{ border:0;  }
+		a{ text-decoration:none; color:#333;  }
+		.picMarquee-left{ width:1657px;  overflow:hidden; position:relative;  border:1px solid #ccc;margin: 0 auto;   }
+		.picMarquee-left .hd .prevStop{ background-position:-60px 0; }
+		.picMarquee-left .hd .nextStop{ background-position:-60px -50px; }
+		.picMarquee-left .bd{ padding:10px; width: 1657px;  }
+		.picMarquee-left .bd ul{ overflow:hidden; zoom:1;width: 1657px; }
+		.picMarquee-left .bd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center;  }
+		.picMarquee-left .bd ul li .pic{ text-align:center; }
+		.picMarquee-left .bd ul li .pic img{ width:530px; height:381px; display:block; padding:2px;  }
+		.picMarquee-left .bd ul li .pic a:hover img{ border-color:#999;  }
+		.picMarquee-left .bd ul li .title{ line-height:24px;   }*/
+		*{margin:0; padding:0; list-style:none; }
+		body{ background:#fff; font:normal 12px/22px 宋体;  }
+		img{ border:0;  }
+		a{ text-decoration:none; color:#333;  }
+
+		/* 本例子css */
+		.picMarquee-left{ width:100%;  overflow:hidden; position:relative;  border:1px solid #ccc;   }
+		.picMarquee-left .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px; width: 100%; margin: 0 auto; }
+		/*.picMarquee-left .hd .prev,.picMarquee-left .hd .next{ display:block;  width:50px; height:90px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden;
+			 cursor:pointer; background:url("images/arrow.png") no-repeat;}*/
+		/*.picMarquee-left .hd .next{ background-position:0 -50px;  }*/
+		.picMarquee-left .hd .prevStop{ background-position:-60px 0; }
+		.picMarquee-left .hd .nextStop{ background-position:-60px -50px; }
+		/*.picMarquee-left .hd ul{ float:right; overflow:hidden; zoom:1; margin-top:10px; zoom:1; }
+		.picMarquee-left .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer; background:url("images/icoCircle.gif") 0 -9px no-repeat; }
+		.picMarquee-left .hd ul li.on{ background-position:0 0; }*/
+		.picMarquee-left .bd{ padding:10px; width: 100%; margin: 0 auto; }
+		.picMarquee-left .bd ul{ overflow:hidden; zoom:1;width: 100%; margin: 0 auto;}
+		.picMarquee-left .bd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center;  }
+		.picMarquee-left .bd ul li .pic{ text-align:center; }
+		.picMarquee-left .bd ul li .pic img{ width:615px; height:381px; display:block;  padding:2px;  }
+		.picMarquee-left .bd ul li .pic a:hover img{ border-color:#999;  }
+		.picMarquee-left .bd ul li .title{ line-height:24px;   }
