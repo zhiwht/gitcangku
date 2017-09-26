@@ -1,0 +1,259 @@
+<!doctype html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <title>首页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-CN">
+<script type="text/javascript" src="js/jquery1.42.min.js" ></script>
+ <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js" ></script>
+ 
+		<link  rel="stylesheet" href="dist/css/lunbo.css"/>
+  
+  <style>
+  	.slideBox{ width:100%; height:750px; overflow:hidden; position:relative; border:1px solid #ddd;  }
+		.slideBox .hd{ height:15px; overflow:hidden; position:absolute; left:50%; bottom:5px; z-index:1; }
+		.slideBox .hd ul{ overflow:hidden; zoom:1; float:left; }
+		.slideBox .hd ul li{ float:left; margin-right:10px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; border-radius: 50%;}
+		.slideBox .hd ul li.on{ background:#3366ff;  }
+		.slideBox .bd{ position:relative; height:100%; z-index:0; width: 100%;  }
+		.slideBox .bd li{ zoom:1; vertical-align:middle; width: 100%;}
+		.slideBox .bd img{ width:100%; height:750px; display:block;  }
+
+		/* 下面是前/后按钮代码，如果不需要删除即可 */
+		.slideBox .prev,
+		.slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:100px; height:114px; 
+		filter:alpha(opacity=50);opacity:0.5;   }
+		.slideBox .prev{
+			background: url(img/g2_03.png);
+		}
+		.slideBox .next{
+			background: url(img/g1_03.png);
+		}
+		.slideBox .next{ left:auto; right:3%;  }
+		.slideBox .prev:hover{
+			background: url(img/g3_03.png);
+		}
+		.slideBox .next:hover{ background: url(img/g4_03.png); 
+		}
+		.slideBox .prevStop{ display:none;  }
+		.slideBox .nextStop{ display:none;  }
+  </style>
+  <link rel="stylesheet" href="dist/css/index.css" />
+</head>
+<body>
+    <header>
+			<div>
+				<img src="img/qs_02.png" alt="" />
+				<ul>
+					<li><a href="lianxiwomen.html">联系我们</a></li>
+					<li><a href="fuwu.html">服务项目</a></li>
+					<li><a href="zhaopin.html">招贤纳仕</a></li>
+					<li><a href="guanyu.html">关于我们</a></li>
+					<li><a href="dongtai.html">新闻动态</a></li>
+					<li><a href="#">首页</a></li>
+				</ul>
+			</div>
+		</header>
+    <div id="slideBox" class="slideBox">
+			<div class="hd">
+				<ul><li></li><li></li><li></li></ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li><img  src="img/banner1.jpg"/></li>
+					<li><img src="img/banner2.jpg" /></li>
+					<li><img src="img/banner3.jpg" /></li>
+				</ul>
+			</div>
+
+			<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+			<a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a>
+
+		</div>
+		<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",effect:"left",autoPlay:true,delayTime:1000});
+		</script>
+    <div class="know-qs">
+      <div class="title"><span>了解其算</span></br><span>UNDERSTANS QISUAN</span></div>
+      		<div class="picMarquee-left ">
+			<div class="hd">
+				<a class=" scroll-left next"></a>
+				<a class=" scroll-right prev"></a>
+			</div>
+			<div class="bd">
+				<ul class="picList">
+					<li>
+						<div class="pic">
+								<img src="./img/know-nav1.jpg" />
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+								<img src="./img/know-nav2.jpg" />
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+								<img src="./img/know-nav3.jpg" />
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<img src="./img/know-nav1.jpg" />
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<img src="./img/know-nav2.jpg" />
+						</div>
+					<li>
+						<div class="pic">
+							<img src="./img/know-nav3.jpg" />
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+      <div class="know-culture">
+        <div class="culture-masking"></div>
+        <div class="culture-top">
+          <div class="play"><img src="./img/play.png"></div>
+
+          <p>    目标必须是明确的、可达到的、可衡量的知道目标，找出好的方法，起身去做观察
+每个步骤的结果，不断修正调整以达到目标为止</p>
+
+          <li>梦想<span>DREAW</span></li>
+          <img width="1070px" src="./img/20170610124047.png">
+          <div class="video">
+            <img src="img/stop.png" class="video-stop" id="b"></img>
+            <video id="video" width="1070" controls='controls' >
+              <source src="./img/Building_a_Better_Connected_World_201620160905.mp4"  type="video/mp4">
+              您的浏览器不支持 HTML5 video 标签。
+            </video>
+          </div>
+          
+        </div>
+        <div class="culture-botton">
+          <div class="culture-botton-masking">
+            <div class="culture-masking1">
+            
+             <p>    目标必须是明确的、可达到的、可衡量的知道目标，找出好的方法，起身去做观察
+每个步骤的结果，不断修正调整以达到目标为止</p>
+            </div>
+            <li>梦想<span>DREAW</span></li>
+            <img src="./img/culture2.jpg">
+          </div>
+          <div class="culture-botton-masking">
+            <div class="culture-masking1">
+            
+              <p>    目标必须是明确的、可达到的、可衡量的知道目标，找出好的方法，起身去做观察
+每个步骤的结果，不断修正调整以达到目标为止</p>
+            </div>
+            <li>梦想<span>DREAW</span></li>
+            <img src="./img/culture3.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="know-details">
+        <div class="details-left">
+          <p>了解其算</p>
+          <p>求实、创新、诚信发展真诚、友善、和谐、互赢的关系有一分热发一分光、让客户满意是是我们企业发展的动力是一种伟大的精神力量</p>
+          <p>Realistic, innovative, honest development, sincere, friendly, harmonious, mutual win relationship, a point of heat, a light, so that customer satisfaction is our enterprise development momentum, is a great spiritual force</p>
+        </div>
+        <div class="details-right">
+          <img src="./img/details.png" alt="">
+        </div>
+        <a class="details" href="#">查看详情<img src="./img/arrows.png"></a>
+      </div>
+    </div>
+    <div class="build-station">
+      <div class="buid-center">
+        <div class="station-left">
+          <p>专业建站</p>
+          <p>————求实、创新、诚信发展真诚、友善、和谐、互赢的关系有一分热发一分
+    光、让客户满意是是我们企业发展的动力是一种伟大的精神力量</p>
+          <div><span>专业建站</span><i></i><span>专业建站</span><i></i><span>专业建站</span></div>
+        </div>
+        <div class="video1">
+          <img src="img/stop.png" class="video-stop1" id="d"></span>
+          <video id="video1" width="1085px" controls='controls' >
+            <source src="./img/1469604697282-momo.mp4"  type="video/mp4">
+            您的浏览器不支持 HTML5 video 标签。
+          </video>
+        </div>
+        <div class="station-right">
+          <div class="play1"><img src="./img/play.png"></div>
+          <img height="316px" style='transform: translate(-50%,-50%);position: absolute;top: 50%;left: 50%;' src="./img/20170610205541.png">
+          
+        </div>
+      </div>
+    </div>
+    <div class="news">
+      <div class="title"><span>新闻资讯</span></br><span>NEWS INFORMATION</span></div>
+      <div class="news-info">
+        <img src="./img/new.jpg">
+        <div class="info">
+          <ul>
+            <li><a href="">求实、创新、诚信发展真诚、友善、和谐、互赢的关系</a><span>2017-06-01</span></li>
+            <li><a href="">求实、创新、诚信发展真诚、友善、和谐、互赢的关系</a><span>2017-06-01</span></li>
+            <li><a href="">求实、创新、诚信发展真诚、友善、和谐、互赢的关系</a><span>2017-06-01</span></li>
+            <li><a href="">求实、创新、诚信发展真诚、友善、和谐、互赢的关系</a><span>2017-06-01</span></li>
+            <li><a href="">求实、创新、诚信发展真诚、友善、和谐、互赢的关系</a><span>2017-06-01</span></li>
+            <li><a href="">求实、创新、诚信发展真诚、友善、和谐、互赢的关系</a><span>2017-06-01</span></li>
+            <li><a href="">求实、创新、诚信发展真诚、友善、和谐、互赢的关系</a><span>2017-06-01</span></li>
+            <li><a href="">求实、创新、诚信发展真诚、友善、和谐、互赢的关系</a><span>2017-06-01</span></li>
+            <li><a href="">求实、创新、诚信发展真诚、友善、和谐、互赢的关系</a><span>2017-06-01</span></li>
+            <li><a href="">求实、创新、诚信发展真诚、友善、和谐、互赢的关系</a><span>2017-06-01</span></li>
+            <li><a href="">求实、创新、诚信发展真诚、友善、和谐、互赢的关系</a><span>2017-06-01</span></li>
+          </ul>
+        </div>
+      </div>
+      <a href="dongtai.html">查看更多</a>
+    </div>
+    <footer>
+			<ul>
+				<li>
+					<img src="img/011_07.png" alt="" />
+					<h2>关于我们</h2>
+					<p>关于其算</p>
+					<p class="g">关于其算</p>
+					<p class="g">关于其算</p>
+				</li>
+				<li><img src="img/011_07.png" alt="" />
+					<h2>关于我们</h2>
+					<p>关于其算</p>
+					<p class="g">关于其算</p>
+					<p class="g">关于其算</p></li>
+				<li><img src="img/011_07.png" alt="" />
+					<h2>关于我们</h2>
+					<p>关于其算</p>
+					<p class="g">关于其算</p>
+					<p class="g">关于其算</p>
+					<div class="jian">
+				<p>建站服务热线：</p>
+				<p>020-32547896</p>
+				<img src="img/b1_10.png"/>
+			</div>
+			<div class="x"></div>
+				</li>
+			</ul>
+			
+		</footer>
+		<div class="foot">
+			<p>
+				@ 2017.5.17 其算科技网络有限公司 粤A02-2017517<img src="img/p_11.png" />
+				020-32547896&nbsp;
+				声明法律&nbsp;|&nbsp;隐私保护&nbsp;|&nbsp;联系我们
+				
+			</p>
+		</div>
+		<div id="top">
+			<a href="#"><img src="img/top_03.png"/></a>
+		</div>
+    <script type="text/javascript" src="js/01.js" ></script>
+    <script type="text/javascript" src="js/02.js" ></script>
+    <script type="text/javascript" src="js/fanhui.js" ></script>
+</body>
+</html>
